@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fabricmethod.MyController">
+    <HBox alignment="CENTER">
+        <TextField fx:id="textField" prefWidth="240" promptText="Ввод кол-во сторон">
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin></TextField>
+        <Button fx:id="buildButton" prefWidth="240" text="Построить" />
+    </HBox>
+   <Canvas fx:id="canvas" height="500.0" width="500.0">
+      <VBox.margin>
+         <Insets top="15.0" />
+      </VBox.margin>
+   </Canvas>
+   <padding>
+      <Insets top="50.0" />
+   </padding>
+</VBox>
